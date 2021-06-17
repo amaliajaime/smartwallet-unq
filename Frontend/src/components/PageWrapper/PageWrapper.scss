@@ -1,0 +1,13 @@
+.content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.marginSides {
+    --padding-start: 7%;
+    --padding-end: 7%;
+    --padding-top: 7%;
+    --padding-bottom: 7%;
+}
