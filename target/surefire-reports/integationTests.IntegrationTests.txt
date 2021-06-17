@@ -1,0 +1,568 @@
+-------------------------------------------------------------------------------
+Test set: integationTests.IntegrationTests
+-------------------------------------------------------------------------------
+Tests run: 47, Failures: 0, Errors: 47, Skipped: 0, Time elapsed: 1,403.584 s <<< FAILURE! - in integationTests.IntegrationTests
+testNotFoundUserToGetBalance(integationTests.IntegrationTests)  Time elapsed: 29.013 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testIncorrectIdExpenseToDelete(integationTests.IntegrationTests)  Time elapsed: 28.687 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testLoginWithIncorrectPassword(integationTests.IntegrationTests)  Time elapsed: 29.239 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testSuccessDeleteExpense(integationTests.IntegrationTests)  Time elapsed: 28.762 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testIncorrectAddIncome(integationTests.IntegrationTests)  Time elapsed: 28.815 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testIncorrectIdIncomeToDelete(integationTests.IntegrationTests)  Time elapsed: 29.659 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testIncorrectGetIncomeHistory(integationTests.IntegrationTests)  Time elapsed: 30.547 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testRegisterLoginAddIncomeAndAddExpense(integationTests.IntegrationTests)  Time elapsed: 34.798 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testSuccessRegister(integationTests.IntegrationTests)  Time elapsed: 28.422 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testSuccessAdd2Incomes(integationTests.IntegrationTests)  Time elapsed: 27.974 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testSuccessFilteredExpensesEndpointInvalidDateException(integationTests.IntegrationTests)  Time elapsed: 28.538 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testSuccessAddIncome(integationTests.IntegrationTests)  Time elapsed: 30.094 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testSuccessGetIncomeHistory(integationTests.IntegrationTests)  Time elapsed: 29.045 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testSuccessAddProgrammedExpense(integationTests.IntegrationTests)  Time elapsed: 29.01 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testConfirmUser(integationTests.IntegrationTests)  Time elapsed: 29.286 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testSuccessAddExpense(integationTests.IntegrationTests)  Time elapsed: 28.842 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testFilteredIncomes(integationTests.IntegrationTests)  Time elapsed: 30.39 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testSuccessAdd3Expenses(integationTests.IntegrationTests)  Time elapsed: 29.069 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testSuccessGetBalance(integationTests.IntegrationTests)  Time elapsed: 29.659 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testNotFoundExpenseToEdit(integationTests.IntegrationTests)  Time elapsed: 28.983 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testSuccessGetProfile(integationTests.IntegrationTests)  Time elapsed: 28.333 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testRegisterLoginAddIncomeAddExpensesEditExpenseAndGetBalance(integationTests.IntegrationTests)  Time elapsed: 28.312 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testSuccessEditExpense(integationTests.IntegrationTests)  Time elapsed: 28.311 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testSuccessDeleteExpenseBetween2(integationTests.IntegrationTests)  Time elapsed: 30.016 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testInvalidProgrammedExpense(integationTests.IntegrationTests)  Time elapsed: 28.298 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testFilteredExpenses(integationTests.IntegrationTests)  Time elapsed: 28.94 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testSuccessGetExpenseHistory(integationTests.IntegrationTests)  Time elapsed: 30.041 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testSuccessLogin(integationTests.IntegrationTests)  Time elapsed: 28.78 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testSuccessFilteredIncomesEndpoint(integationTests.IntegrationTests)  Time elapsed: 28.814 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testSuccessDeleteIncome(integationTests.IntegrationTests)  Time elapsed: 29.196 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testRegisterLoginAddIncomeAddExpenseAndGetBalance(integationTests.IntegrationTests)  Time elapsed: 29.116 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testRegisterLoginAddIncomeAdd2ExpensesAndGetBalance(integationTests.IntegrationTests)  Time elapsed: 28.863 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testLoginWithIncorrectUsername(integationTests.IntegrationTests)  Time elapsed: 28.18 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testSuccessEditIncome(integationTests.IntegrationTests)  Time elapsed: 29.05 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testNotFoundIncomeToEdit(integationTests.IntegrationTests)  Time elapsed: 29.089 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testSuccessEditProfile(integationTests.IntegrationTests)  Time elapsed: 29.561 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testSuccessFilteredExpensesEndpoint(integationTests.IntegrationTests)  Time elapsed: 28.952 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testIncorrectGetExpenseHistory(integationTests.IntegrationTests)  Time elapsed: 29.571 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testRegisterWithUsedEmail(integationTests.IntegrationTests)  Time elapsed: 29.523 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testUserRegisterLoginAndEditProfile(integationTests.IntegrationTests)  Time elapsed: 30.146 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testInvalidProgrammedIncome(integationTests.IntegrationTests)  Time elapsed: 29.099 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testSuccessDeleteIncomeBetween2(integationTests.IntegrationTests)  Time elapsed: 28.917 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testSuccessFilteredIncomesEndpointInvalidDateException(integationTests.IntegrationTests)  Time elapsed: 29.223 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testAddExpenseWithIncorrectAmount(integationTests.IntegrationTests)  Time elapsed: 27.4 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testEditProfileWithIncorrectEmail(integationTests.IntegrationTests)  Time elapsed: 29.54 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testRegisterWithInvalidMail(integationTests.IntegrationTests)  Time elapsed: 27.694 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
+testEditProfileWithUsedEmail(integationTests.IntegrationTests)  Time elapsed: 28.364 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column user0_.id does not exist
+  Position: 8
+	at integationTests.IntegrationTests.setup(IntegrationTests.java:88)
+
