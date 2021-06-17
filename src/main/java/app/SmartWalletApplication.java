@@ -2,12 +2,22 @@ package app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-public class SmartWalletApplication {
+@ComponentScan
+public class SmartWalletApplication extends SpringBootServletInitializer {
 
-    public static void main(String[] args) {
-        SpringApplication.run(SmartWalletApplication.class, args);
+        public void main(String[] args) {
+            SpringApplication.run(SmartWalletApplication.class, args);
+        }
+
+
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(SmartWalletApplication.class);
     }
 
 }
