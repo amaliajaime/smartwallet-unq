@@ -10,7 +10,6 @@ import org.springframework.context.annotation.ComponentScan;
 import java.nio.file.FileStore;
 
 @SpringBootApplication
-@ComponentScan
 public class SmartWalletApplication extends SpringBootServletInitializer {
 
         public static void main(String[] args) {
