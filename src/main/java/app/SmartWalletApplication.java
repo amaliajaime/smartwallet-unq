@@ -12,14 +12,8 @@ import java.nio.file.FileStore;
 @SpringBootApplication
 public class SmartWalletApplication extends SpringBootServletInitializer {
 
-        public static void main(String[] args) {
+    public static void main(String[] args) {
             SpringApplication.run(SmartWalletApplication.class, args);
         }
-
-
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(SmartWalletApplication.class);
-    }
 
 }
