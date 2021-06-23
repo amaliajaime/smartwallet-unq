@@ -8,14 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="smartwallet" />
         <module name="Backend" />
-        <module name="Smart-Wallet" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Backend" options="-parameters" />
-      <module name="Smart-Wallet" options="-parameters" />
       <module name="smartwallet" options="-parameters" />
     </option>
   </component>
