@@ -1,8 +1,6 @@
 package app.model.Token;
 
 import app.model.User.Users;
-import app.model.User.Users;
-
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
