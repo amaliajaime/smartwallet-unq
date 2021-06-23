@@ -1,8 +1,7 @@
 package unitTests;
 
 import app.model.Exceptions.InvalidEmailException;
-import app.model.Expense.Expense;
-import app.model.User.User;
+import app.model.User.Users;
 import org.junit.Test;
 
 import java.time.LocalDateTime;
@@ -14,7 +13,7 @@ public class UserTests {
     @Test
     public void userProperties(){
 
-        User user = new User("Smart", "smart.wallet.app1@gmail.com", "sw");
+        Users user = new Users("Smart", "smart.wallet.app1@gmail.com", "sw");
 
         assertEquals("Smart", user.getName());
         assertEquals("smart.wallet.app1@gmail.com", user.getUsername());
@@ -31,7 +30,7 @@ public class UserTests {
     @Test
     public void setName(){
 
-        User user = new User("Smart", "smart.wallet.app1@gmail.com", "sw");
+        Users user = new Users("Smart", "smart.wallet.app1@gmail.com", "sw");
 
         String expect = "Sm";
         user.setName("Sm");
@@ -43,7 +42,7 @@ public class UserTests {
     @Test
     public void setEmail(){
 
-        User user = new User("Smart", "smart.wallet.app1@gmail.com", "sw");
+        Users user = new Users("Smart", "smart.wallet.app1@gmail.com", "sw");
 
         String expect = "smart.wallet.app@com";
         user.setEmail("smart.wallet.app@com");
@@ -55,7 +54,7 @@ public class UserTests {
     @Test
     public void setPassword(){
 
-        User user = new User("Smart", "smart.wallet.app1@gmail.com", "sw");
+        Users user = new Users("Smart", "smart.wallet.app1@gmail.com", "sw");
 
         String expect = "SmartW";
         user.setPassword("SmartW");
@@ -67,7 +66,7 @@ public class UserTests {
     @Test(expected = InvalidEmailException.class)
     public void invalidEmailException(){
 
-        User user = new User("Smart", "smart.wallet.app1", "sw");
+        Users uer = new Users("Smart", "smart.wallet.app1", "sw");
 
     }
 

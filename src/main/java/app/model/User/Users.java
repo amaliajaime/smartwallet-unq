@@ -44,9 +44,9 @@ public class Users implements UserDetails {
     private Boolean enabled;
 
     //Constructor
-    public User() {}
+    public Users() {}
 
-    public User(String name, String email, String password) {
+    public Users(String name, String email, String password) {
 
         isAValidEmail(email);
 

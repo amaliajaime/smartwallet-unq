@@ -12,7 +12,7 @@ import app.model.Income.Income;
 import app.model.Task.ExpenseTask;
 import app.model.Task.IncomeTask;
 import app.model.Token.ConfirmationToken;
-import app.model.User.User;
+import app.model.User.Users;
 import app.model.Validators.EmailValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -60,7 +60,7 @@ public class UserService implements UserDetailsService {
         return this.findUserByEmail(email);
     }
 
-    public void registerUser(User user) {
+    public void registerUser(Users user) {
         boolean isValidEmail = this.emailValidator.test(user.getUsername());
         if (!isValidEmail){
             throw new InvalidEmailException(user.getUsername());
@@ -68,17 +68,17 @@ public class UserService implements UserDetailsService {
         this.signUpUser(user);
     }
 
-    public User findUserById(Long id){
+    public Users findUserById(Long id){
         return userRepository.findById(id)
                 .orElseThrow(() -> new UsernameNotFoundException(String.format(ID_NOT_FOUND, id)));
     }
 
-    public User findUserByEmail(String email) {
+    public Users findUserByEmail(String email) {
         return userRepository.findByEmail(email)
                 .orElseThrow(() -> new UsernameNotFoundException(String.format(USER_NOT_FOUND, email)));
     }
 
-    public void signUpUser(User user){
+    public void signUpUser(Users user){
 
         boolean userExists = userRepository.findByEmail(user.getUsername()).isPresent();
         if(userExists){
@@ -183,12 +183,12 @@ public class UserService implements UserDetailsService {
             throw new InvalidEmailException(email);
         }
 
-        Optional<User> user = userRepository.findByEmail(email);
+        Optional<Users> user = userRepository.findByEmail(email);
         if(user.isPresent() && user.get().getId() != id){
             throw new UsedEmailException(email);
         }
 
-        User userEdit = findUserById(id);
+        Users userEdit = findUserById(id);
         userEdit.setName(name);
         userEdit.setEmail(email);
 
@@ -197,7 +197,7 @@ public class UserService implements UserDetailsService {
     }
 
     public double getBalance(Long id) {
-        User user = findUserById(id);
+        Users user = findUserById(id);
         return (user.getAccountCredit() - user.getAccountExpense());
     }
 

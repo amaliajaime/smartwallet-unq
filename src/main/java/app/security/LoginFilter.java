@@ -1,7 +1,7 @@
 package app.security;
 
 import app.dto.LoginDTO;
-import app.model.User.User;
+import app.model.User.Users;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -54,7 +54,7 @@ public class LoginFilter extends AbstractAuthenticationProcessingFilter {
 
         //Si la autenticacion fue exitosa, agregamos el token y el id a la respuesta.
         JwtUtil.addAuthentication(res, auth.getName());
-        JwtUtil.addId(res, ((User) auth.getPrincipal()).getId());
+        JwtUtil.addId(res, ((Users) auth.getPrincipal()).getId());
 
     }
 }
