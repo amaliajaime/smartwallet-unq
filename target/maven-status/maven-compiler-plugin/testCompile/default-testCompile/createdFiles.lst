@@ -1,0 +1,6 @@
+unitTests\EmailValidatorTest.class
+unitTests\ExpenseTests.class
+unitTests\UserTests.class
+unitTests\EmailTests.class
+unitTests\ConfirmationTokenTests.class
+unitTests\IncomeTests.class

@@ -1,7 +1,5 @@
 package app.model.Income;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
@@ -146,9 +144,7 @@ public class Income {
         return this.amount > 0;
     }
 
-    public Boolean isProgrammed(){
-        return this.programmed;
-    }
+    public Boolean isProgrammed(){ return this.programmed; }
 
     public Boolean isCancelled(){ return this.cancelled; }
 

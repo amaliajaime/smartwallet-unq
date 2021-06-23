@@ -1,7 +1,7 @@
 package unitTests;
 
 import app.model.Token.ConfirmationToken;
-import app.model.User.User;
+import app.model.User.Users;
 import org.junit.Test;
 
 import java.time.LocalDateTime;
@@ -14,7 +14,7 @@ public class ConfirmationTokenTests {
     public void confirmationTokenProperties(){
 
         LocalDateTime now = LocalDateTime.now();
-        User user = new User("Smart", "smart.wallet.app1@gmail.com", "sw");
+        Users user = new Users("Smart", "smart.wallet.app1@gmail.com", "sw");
         ConfirmationToken token = new ConfirmationToken("123456789", now, now.plusMinutes(15), user);
 
         assertEquals(now.plusMinutes(15), token.getExpiresAt());
