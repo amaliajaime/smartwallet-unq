@@ -14,7 +14,7 @@ import static app.model.User.UserRole.USER;
 @Entity
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "type", discriminatorType = DiscriminatorType.STRING)
-public class User implements UserDetails {
+public class Users implements UserDetails {
 
     //Parameters
     @Id
@@ -44,9 +44,9 @@ public class User implements UserDetails {
     private Boolean enabled;
 
     //Constructor
-    public User() {}
+    public Users() {}
 
-    public User(String name, String email, String password) {
+    public Users(String name, String email, String password) {
 
         isAValidEmail(email);
 

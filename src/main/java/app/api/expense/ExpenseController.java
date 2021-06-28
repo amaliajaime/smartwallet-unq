@@ -38,7 +38,6 @@ public class ExpenseController {
 
         expenseService.checkValidProgrammedValues(expense);
         expenseService.saveExpense(expense);
-        userService.updateAccountExpense(expense.getUserId(), expense.getAmount());
         userService.createExpenseTask(expense);
 
         return HttpStatus.OK;

@@ -1,12 +1,11 @@
 package app.api.token;
 
 import app.api.user.UserRepository;
-import app.api.user.UserService;
 import app.model.Exceptions.EmailAlreadyConfirmedException;
 import app.model.Exceptions.TokenExpiredException;
 import app.model.Exceptions.TokenNotFoundException;
 import app.model.Token.ConfirmationToken;
-import app.model.User.User;
+import app.model.User.Users;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -33,7 +32,7 @@ public class ConfirmationTokenService {
         return confirmationTokenRepository.findByToken(token);
     }
 
-    public String getTokenByUser(User user){
+    public String getTokenByUser(Users user){
         return confirmationTokenRepository.findByUser(user).getToken();
     }
 

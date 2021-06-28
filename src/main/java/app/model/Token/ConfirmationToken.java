@@ -1,6 +1,6 @@
 package app.model.Token;
 
-import app.model.User.User;
+import app.model.User.Users;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -28,11 +28,11 @@ public class ConfirmationToken {
             nullable = false,
             name = "user_id"
     )
-    private User user;
+    private Users user;
 
     public ConfirmationToken(){};
 
-    public ConfirmationToken(String token, LocalDateTime createdAt, LocalDateTime expiresAt, User user){
+    public ConfirmationToken(String token, LocalDateTime createdAt, LocalDateTime expiresAt, Users user){
 
         this.token = token;
         this.createdAt = createdAt;
@@ -51,7 +51,7 @@ public class ConfirmationToken {
         return this.expiresAt;
     }
 
-    public User getUser(){
+    public Users getUser(){
         return this.user;
     }
 

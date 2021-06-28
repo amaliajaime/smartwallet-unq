@@ -2,7 +2,7 @@ package app.api.user;
 
 import app.dto.ProfileDTO;
 import app.dto.UserDTO;
-import app.model.User.User;
+import app.model.User.Users;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.*;
@@ -20,7 +20,7 @@ public class UserController {
     @PostMapping(value = "/register")
     public void registerUser(@RequestBody UserDTO userDTO) {
 
-        User user = new User(userDTO.getName(), userDTO.getEmail(), userDTO.getPassword());
+        Users user = new Users(userDTO.getName(), userDTO.getEmail(), userDTO.getPassword());
         userService.registerUser(user);
     }
 
@@ -36,7 +36,7 @@ public class UserController {
         catch (Exception e){
             new UsernameNotFoundException(String.format(ID_NOT_FOUND, id));
         }
-        User user = userService.findUserById(longID);
+        Users user = userService.findUserById(longID);
         return new ProfileDTO(user.getName(), user.getUsername());
 
     }
